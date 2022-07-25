@@ -42,4 +42,6 @@ export class PrincipalComponent implements OnInit {
     this.minutes = Math.floor((distance % this._hour) / this._minute);
     this.seconds = Math.floor((distance % this._minute) / this._second);
   }
+
+  
 }

@@ -12,18 +12,19 @@
         </div>
     </div>
     <div class="row justify-content-center">
-        <div class="texto-cuenta">
-            <h1>Faltan</h1>
-            <div class="time-countdown">
-                <ul>
-                    <li class="count-bg-one radius"><span id="days">{{month}}</span>Meses</li>
-                    <li class="count-bg-one radius"><span id="days">{{day}}</span>Dias</li>
-                    <li class="count-bg-two radius"><span id="hours">{{hours}}</span>Horas</li>
-                    <li class="count-bg-three radius"><span id="minutes">{{minutes}}</span>Minutos</li>
-                    <!-- <li class="count-bg-four radius"><span id="seconds">{{seconds}}</span>Segundos</li> -->
-                </ul>
-            </div>
+      <div class="texto-cuenta">
+        <h1>Faltan</h1>
+        <div class="time-countdown">
+          <ul>
+            <li class="count-bg-one radius"><span id="days" class="numeros-contador">{{month}}</span>Meses</li>
+            <li class="count-bg-one radius"><span id="days" class="numeros-contador">{{day}}</span>Dias</li>
+            <li class="count-bg-two radius"><span id="hours" class="numeros-contador">{{hours}}</span>Horas</li>
+            <li class="count-bg-three radius"><span id="minutes" class="numeros-contador">{{minutes}}</span>Minutos</li>
+            <!-- <li class="count-bg-four radius"><span id="seconds">{{seconds}}</span>Segundos</li> -->
+          </ul>
         </div>
+      </div>
+      <img src="assets/heart_icon.svg" class="img-corazon" height="80rem" alt="Responsive image">
     </div>
     <div class="row justify-content-center">
         <div class="texto-historia">
@@ -33,119 +34,230 @@
             </p>
         </div>
     </div>
-    <div class="row">
-        <div class="card-group">
-            <div class="card">
-                <img src="assets/foto1.jpg" class="card-img-top" alt="Responsive image">
-            </div>
-            <div class="card">
-                <img src="assets/foto2.jpg" class="card-img-top" alt="Responsive image">
-            </div>
-            <div class="card">
-                <img src="assets/foto3.jpeg" class="card-img-top" alt="Responsive image">
-            </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card border-0">
+          <img src="assets/foto1.jpg" class="card-img-top" alt="Responsive image">
         </div>
+      </div>
+      <div class="col">
+        <div class="card border-0">
+          <img src="assets/foto2.jpg" class="card-img-top" alt="Responsive image">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0">
+          <img src="assets/foto3.jpeg" class="card-img-top" alt="Responsive image">
+        </div>
+      </div>
     </div>
     <div class="row informacion" id="ceremonia">
         <div class="col-sm-6">
-          <div class="card">
+          <div class="card border-0">
             <div class="card-body">
-              <h5 class="card-title">LA CEREMONIA</h5>
-              <p class="card-text">LA CEREMONIA</p>
+              <img src="assets/ceremonia.png" class="img-corazon" height="130rem" alt="Responsive image">
+              <!-- <h5 class="card-title">LA CEREMONIA</h5>
+              <p class="card-text">LA CEREMONIA</p> -->
             </div>
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card">
+          <div class="card border-0">
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <p class="card-text" style="text-align: right;">La ceremonia se realizará el 15 de Octubre a las 16:00 hs
+              <p class="card-text" style="text-align: right; font-size: 18px;">La ceremonia se realizará el 15 de Octubre a las 16:00 hs
                 en el complejo “Gilgal”, Bialet Massé, Córdoba.
                 Al finalizar nos quedaremos a celebrar en el mismo lugar.</p>
-              <a href="#" class="btn btn-primary"> Ver ubicación</a>
+              <a class="btn btn-primary boton-enlace" href="https://goo.gl/maps/iaKEYnyDuJ55Uti5A" target="_blank" rel="noopener noreferrer"> Ver ubicación</a>
             </div>
           </div>
         </div>
     </div>
     <div class="row informacion" id="vestimenta">
         <div class="col-sm-6">
-          <div class="card">
+          <div class="card border-0">
             <div class="card-body">
-              <h5 class="card-title">VESTIMENTA</h5>
-              <p class="card-text">ELEGANTE SPORT</p>
-              <p class="card-text">
+              <img src="assets/vestimenta.png" class="img-corazon" height="130rem" alt="Responsive image">
+              <!-- <h5 class="card-title">VESTIMENTA</h5> -->
+              <p class="card-text" style="text-align: left; font-size: 18px;">ELEGANTE SPORT</p>
+              <p class="card-text" style="text-align: left; font-size: 18px;">
                 Nuestro casamiento será al aire libre,
                 sugerimos llevar abrigo y calzado cómodo.</p>
             </div>
           </div>
         </div>
         <div class="col-sm-6" id="regalos">
-          <div class="card">
+          <div class="card border-0 informacion">
             <div class="card-body">
-              <h5 class="card-title"></h5>
-              <p class="card-text" style="text-align: right;">El mejor regalo es tu presencia !
+              <img src="assets/regalos.png" class="img-corazon" height="130rem" alt="Responsive image">
+              <!-- <h5 class="card-title">LISTA DE REGALOS</h5> -->
+              <p class="card-text" style="text-align: right; font-size: 18px;">El mejor regalo es tu presencia !
                 Pero si deseas realizarnos un regalo, te mostramos
                 a continuación una lista con las cosas que nos
                 hacen falta.</p>
-              <a href="#" class="btn btn-primary"> Ver lista de regalos</a>
+              <a class="btn btn-primary boton-enlace" data-bs-toggle="modal" data-bs-target="#exampleModal2"> Ver lista de regalos</a>
             </div>
           </div>
         </div>
     </div>
     <div class="row informacion" id="asistencia">
         <div class="col-sm-6">
-          <div class="card">
+          <div class="card border-0">
             <div class="card-body">
-              <h5 class="card-title">CONFIRMACIÓN</h5>
+              <img src="assets/confirmacion.png" class="img-corazon" height="130rem" alt="Responsive image">
+              <!-- <h5 class="card-title">CONFIRMACIÓN</h5> -->
             </div>
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card informacion">
+          <div class="card border-0 informacion-confirmacion">
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <p class="card-text" style="text-align: right;">Es importante para nosotros saber si vamos a poder contar con tu
+              <p class="card-text" style="text-align: left; font-size: 18px;">Es importante para nosotros saber si vamos a poder contar con tu
                 presencia en este día especial.</p>
-                <p class="card-text" style="text-align: right;">Te comentamos que para ello la tarjeta tiene un valor de $2500,
+                <p class="card-text" style="text-align: left; font-size: 18px;">Te comentamos que para ello la tarjeta tiene un valor de $2500,
                     el cual podrás abonar haciendo una transferencia a nuestro CBU</p>
-                    <p class="card-text" style="text-align: right;">ALIAS: “BODA.HERNAN.DEBORA
+                    <p class="card-text" style="text-align: left; font-size: 18px;">ALIAS: “BODA.HERNAN.DEBORA
                         CBU: 0720205888000043002436</p>
-                        <p class="card-text" style="text-align: right;">Además, te contamos también que es necesario que puedas
+                        <p class="card-text" style="text-align: left; font-size: 18px;">Además, te contamos también que es necesario que puedas
                             completar el siguiente formulario para que podamos saber que estas
                             anotado</p>
-              <a href="#" class="btn btn-primary">Ir al formulario</a>
+              <a href="https://forms.gle/156pKgfFAjYLaofp8" target="_blank" rel="noopener noreferrer" class="btn btn-primary boton-confirmacion">Ir al formulario</a>
             </div>
           </div>
         </div>
     </div>
     <div class="row informacion" style="text-align: right !important;">
         <div class="">
-            <h1>Los amamos</h1>
-            <p>Herni y Debo</p>
+          <img src="assets/los-amamos.png" class="img-corazon" height="130rem" alt="Responsive image">
+            <!-- <h1>Los amamos</h1>
+            <p>Herni y Debo</p> -->
         </div>
     </div>
 </div>
-<footer style="background-color: rgba(0, 0, 0, 0.05);">
+<footer style="background-color: #F3F3E7;">
     <div class="text-center p-4" >
         <!--Grid row-->
         <div class="row">
           <!--Grid column-->
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <p class="text-uppercase" href="ceremonia">CEREMONIA</p>
+                <a class="text-uppercase enlaces" href="#ceremonia">CEREMONIA</a>
             </div>
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <p class="text-uppercase" href="vestimenta">VESTIMENTA</p>
+                <a class="text-uppercase enlaces" href="#vestimenta">VESTIMENTA</a>
             </div>
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <p class="text-uppercase" href="regalos">LISTA DE REGALOS</p>
+                <a class="text-uppercase enlaces" href="#regalos">LISTA DE REGALOS</a>
             </div>
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <p class="text-uppercase" href="asistencia">CONFIRMACIÓN DE ASISTENCIA</p>
+                <a class="text-uppercase enlaces" href="#asistencia">CONFIRMACIÓN DE ASISTENCIA</a>
             </div>
         </div>
     </div>
-    <div class="text-center p-4">
-        Débora y Hernan | 15-10-2022
+    <div class="text-center p-4" style="font-size: 14px;">
+      Débora y Hernan | 15-10-2022
     </div>
 </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ubicación</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row justify-content-center">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.452788008519!2d-64.45585638516123!3d-31.318866198674783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d64bfbb9da13b%3A0xe9eb804e402ad4ff!2sComplejo%20Gilgal!5e0!3m2!1ses-419!2sar!4v1658426823856!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal modal-lg fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color: #F3F3E7;">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body regalos">
+        <p style="font-size: 19px !important;">LISTA DE REGALOS</p>
+        <h1 style="font-size: 63px !important;">Hernán y Débora</h1>
+        <br>
+        <p>
+          Gracias por pensar en ayudarnos.
+          Aquí te dejamos una lista de aquellas cosas que consideramos que son útiles para nosotros,
+          por lo cual te pedimos que una vez que elijas, te puedas contactar con nosotros
+          así nos lo haces saber.
+          En caso de que tengas dudas de si alguna de estas cosas ya nos la han regalado,
+          escribinos por WhatsApp para que nosotros te podamos informar.
+        </p>
+        <table class="table table-borderless align-middle">
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="regalos">Microondas</td>
+              <td class="regalos">Licuadora</td>
+            </tr>
+            <tr>
+              <td class="regalos">Horno Eléctrico</td>
+              <td class="regalos">Cafetera</td>
+            </tr>
+            <tr>
+              <td class="regalos">Aspiradora</td>
+              <td class="regalos">Cubrecama Invierno (2 Plazas)</td>
+            </tr>
+            <tr>
+              <td class="regalos">Pava Eléctrica</td>
+              <td class="regalos">Acolchado (2 Plazas)</td>
+            </tr>
+            <tr>
+              <td class="regalos">Pochoclera</td>
+              <td class="regalos">Cubrecama Verano (2 Plazas)</td>
+            </tr>
+            <tr>
+              <td class="regalos">Juego de Sábanas</td>
+              <td class="regalos">Manteles</td>
+            </tr>
+            <tr>
+              <td class="regalos">Ventilador de pie</td>
+              <td class="regalos">Juego de Toalla y Toallón</td>
+            </tr>
+            <tr>
+              <td class="regalos">Plancha o PLancheta</td>
+              <td class="regalos">Freidora de aire</td>
+            </tr>
+            <tr>
+              <td class="regalos">Platos grandes</td>
+              <td class="regalos">Cubrecama liso (1 Plaza)</td>
+            </tr>
+            <tr>
+              <td class="regalos">Batidora</td>
+              <td class="regalos">Tostadora</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p style="font-size: 18px !important;">
+          Si deseas podés colaborar con nuestra LUNA DE MIEL
+          Haciendo una transferencia a nuestro CBU
+          ALIAS: “BODA.HERNAN.DEBORA
+          CBU: 0720205888000043002436
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <!-- <script src="script.js"></script> -->

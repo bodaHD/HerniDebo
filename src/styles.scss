@@ -16,43 +16,58 @@
     background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 767px) {
+
+    #fondo {
+        background-image: url("assets/fondo-mobile.jpeg");
+    }
+}
+
 .texto-versiculo{
+    font-family: 'Poppins', sans-serif;
     display: flex;
     margin-top: 3rem !important;
     text-align: center !important;
     padding-top: 3rem !important;
-    color: #878a99 !important;
+    color: #5E6D80 !important;
     line-height: 1.5 !important;
-    font-size: 1.5rem;
+    font-size: 25px;
     font-weight: 300;
     justify-content: center;
     align-items: center;
 }
 
 .texto-historia{
+    font-family: 'Poppins', sans-serif;
     display: flex;
     text-align: center !important;
     padding-top: 3rem !important;
-    color: #878a99 !important;
+    color: #5E6D80 !important;
     line-height: 1.5 !important;
-    font-size: 1.5rem;
+    font-size: 32px;
     font-weight: 300;
     justify-content: center;
     align-items: center;
 }
 
 .versiculo-primary{
-    color: #595959;
+    color: #5E6D80;
 }
 
 .texto-cuenta{
+    font-family: 'Poppins', sans-serif;
     // margin-top: 3rem !important;
     text-align: center !important;
     padding-top: 3rem !important;
     line-height: 1.5 !important;
-    color: #595959;
+    color: #5E6D80;
     font-weight: 600 !important;
+    font-size: 43px !important;
     align-items: center;
+}
+
+.img-corazon {
+    color: #5E6D80 !important;
 }
 
 .countdown{
@@ -88,6 +103,7 @@ ul {
 
 .time-countdown ul {
     margin: 36px auto;
+    color: #80BEEF;
 }
 
 // .time-countdown ul li.count-bg-one {
@@ -113,24 +129,86 @@ ul {
     text-align: center;
     display: inline-block;
     padding: 24px 20px;
-    color: #595959;
+    color: #80BEEF;
 }
 
 .radius {
     border-radius: 5px;
 }
 
-.time-countdown ul li span {
-    color: #595959;
+.time-countdown ul li {
+    color: #80BEEF;
     font-family: 'Poppins', sans-serif;
-    font-size: 50px;
+    font-size: 32px;
     line-height: 60px;
-    font-weight: 700;
+    // font-weight: 700;
     display: block;
 }
 
+.numeros-contador {
+    color: #80BEEF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    line-height: 60px;
+    // font-weight: 700;
+    display: block;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .time-countdown ul li {
+        color: #80BEEF;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 60px;
+        // font-weight: 700;
+        display: block;
+    }
+}
+
 .informacion {
+    font-family: 'Poppins', sans-serif;
     margin-top: 3rem !important;
     text-align: center !important;
     padding-top: 3rem !important;
+}
+
+.informacion-confirmacion {
+    font-family: 'Poppins', sans-serif;
+    // margin-top: 3rem !important;
+    text-align: center !important;
+    // padding-top: 3rem !important;
+}
+.regalos {
+    font-family: 'Poppins', sans-serif;
+    text-align: center !important;
+}
+
+.regalos th, .regalos td {
+    font-family: 'Poppins', sans-serif;
+    text-align: center !important;
+    font-size: 21px;
+}
+
+.enlaces{
+    color: #212529 !important;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none !important;
+    font-size: 18px;
+}
+
+.boton-enlace{
+    float: right;
+    background-color: #9DBBD7;
+    border-color: #9DBBD7;
+    color: #E3FCF2;
+    font-size: 16px;
+}
+
+.boton-confirmacion{
+    float: left;
+    background-color: #9DBBD7;
+    border-color: #9DBBD7;
+    color: #E3FCF2;
+    font-size: 16px;
 }
